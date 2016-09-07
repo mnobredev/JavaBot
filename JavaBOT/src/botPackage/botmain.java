@@ -133,7 +133,7 @@ public class botmain extends Frame implements ItemListener, ActionListener{
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
-		}
+		}//aaa
 		
 		if (arg0.getSource()==bt2){
 			botPackage.botactions.t1.stop();
