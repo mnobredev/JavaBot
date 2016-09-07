@@ -19,7 +19,7 @@ public class botactions {
 				// TODO Auto-generated method stub
 				while(true)
 				{
-					String url = "http://localhost:80/pool/listener.php";
+					String url = "http://localhost:90/pool/listener.php";
 
 					try {
 						obj = new URL(url);
@@ -59,9 +59,14 @@ public class botactions {
 						wr.flush();
 						wr.close();
 						int responseCode = con.getResponseCode();
-						System.out.println("\nSending 'POST' request to URL : " + url);
+						botPackage.botmain.ta1.append("\nSending 'POST' request to URL : " + url + "\n");
+						botPackage.botmain.ta1.append("Post parameters : " + urlParameters+ "\n");
+						botPackage.botmain.ta1.append("Response Code : " + responseCode+ "\n");
+						
+						/*System.out.println("\nSending 'POST' request to URL : " + url);
 						System.out.println("Post parameters : " + urlParameters);
 						System.out.println("Response Code : " + responseCode);
+						^*/
 
 						BufferedReader in = new BufferedReader(
 								new InputStreamReader(con.getInputStream()));
@@ -74,7 +79,7 @@ public class botactions {
 						in.close();
 
 						//print result
-						System.out.println(response.toString());
+						botPackage.botmain.ta1.append(response.toString());
 
 					} catch (IOException e) {
 						// TODO Auto-generated catch block

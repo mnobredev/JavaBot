@@ -12,7 +12,7 @@ public class botmain extends Frame implements ItemListener, ActionListener{
 	private static Label lb1, lb2, lb3, lb4, lb5, lb6;
 	private static TextField tf1, tf2, tf3, tf4, tf5, tf6;
 	private static Button bt1, bt2, bt3;
-	private static TextArea ta1;
+	static TextArea ta1;
 	
 	private static Insets inset;
 	
@@ -136,7 +136,8 @@ public class botmain extends Frame implements ItemListener, ActionListener{
 		}
 		
 		if (arg0.getSource()==bt2){
-			System.exit(0);
+			botPackage.botactions.t1.stop();
+			
 		}
 		
 		if (arg0.getSource()==bt3){
