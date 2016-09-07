@@ -12,6 +12,7 @@ public class botmain extends Frame implements ItemListener, ActionListener{
 	private static Label lb1, lb2, lb3, lb4, lb5, lb6;
 	private static TextField tf1, tf2, tf3, tf4, tf5, tf6;
 	private static Button bt1, bt2, bt3;
+	private static TextArea ta1;
 	
 	private static Insets inset;
 	
@@ -40,51 +41,51 @@ public class botmain extends Frame implements ItemListener, ActionListener{
 		inset = getInsets();
 		
 		lb1 = new Label("Tempo:");
-		lb1.setBounds(220 + inset.left, 50 + inset.top, 100, 20);
+		lb1.setBounds(20 + inset.left, 50 + inset.top, 100, 20);
 		add(lb1);
 		
 		tf1 = new TextField();
-		tf1.setBounds(320 + inset.left, 50 + inset.top, 100, 20);
+		tf1.setBounds(120 + inset.left, 50 + inset.top, 100, 20);
 		add(tf1);
 		
 		lb2 = new Label("Cloro Minimo:");
-		lb2.setBounds(220 + inset.left, 100 + inset.top, 100, 20);
+		lb2.setBounds(20 + inset.left, 100 + inset.top, 100, 20);
 		add(lb2);
 		
 		tf2 = new TextField();
-		tf2.setBounds(320 + inset.left, 100 + inset.top, 100, 20);
+		tf2.setBounds(120 + inset.left, 100 + inset.top, 100, 20);
 		add(tf2);
 		
 		lb3 = new Label("Cloro Máximo:");
-		lb3.setBounds(220 + inset.left, 150 + inset.top, 100, 20);
+		lb3.setBounds(20 + inset.left, 150 + inset.top, 100, 20);
 		add(lb3);
 		
 		tf3 = new TextField();
-		tf3.setBounds(320 + inset.left, 150 + inset.top, 100, 20);
+		tf3.setBounds(120 + inset.left, 150 + inset.top, 100, 20);
 		add(tf3);
 		
 		lb4 = new Label("PH Minímo:");
-		lb4.setBounds(220 + inset.left, 200 + inset.top, 100, 20);
+		lb4.setBounds(20 + inset.left, 200 + inset.top, 100, 20);
 		add(lb4);
 		
 		tf4 = new TextField();
-		tf4.setBounds(320 + inset.left, 200 + inset.top, 100, 20);
+		tf4.setBounds(120 + inset.left, 200 + inset.top, 100, 20);
 		add(tf4);
 		
 		lb5 = new Label("PH Máximo:");
-		lb5.setBounds(220 + inset.left, 250 + inset.top, 100, 20);
+		lb5.setBounds(20 + inset.left, 250 + inset.top, 100, 20);
 		add(lb5);
 		
 		tf5 = new TextField();
-		tf5.setBounds(320 + inset.left, 250 + inset.top, 100, 20);
+		tf5.setBounds(120 + inset.left, 250 + inset.top, 100, 20);
 		add(tf5);
 		
 		lb6 = new Label("ID:");
-		lb6.setBounds(220 + inset.left, 300 + inset.top, 100, 20);
+		lb6.setBounds(20 + inset.left, 300 + inset.top, 100, 20);
 		add(lb6);
 		
 		tf6 = new TextField();
-		tf6.setBounds(320 + inset.left, 300 + inset.top, 100, 20);
+		tf6.setBounds(120 + inset.left, 300 + inset.top, 100, 20);
 		add(tf6);
 		
 		bt1 = new Button("Start");
@@ -101,6 +102,11 @@ public class botmain extends Frame implements ItemListener, ActionListener{
 		bt3.setBounds(475 + inset.left, 350 + inset.top, 100, 30);
 		bt3.addActionListener(this);
 		add(bt3);
+		
+		ta1 = new TextArea();
+		ta1.setEditable(false);
+		ta1.setBounds(250 + inset.left, 50 + inset.top, 325, 270);
+		add(ta1);
 		
 	}
 	
