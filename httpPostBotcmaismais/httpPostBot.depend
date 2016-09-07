@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1473271578 source:c:\users\antonio\desktop\httppostbot\main.cpp
+	<string>
+	<iostream>
+	<winsock2.h>
+	<windows.h>
+	<sstream>
+
