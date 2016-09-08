@@ -12,7 +12,7 @@ public class botmain extends Frame implements ItemListener, ActionListener{
 	private static Label lb1, lb2, lb3, lb4, lb5, lb6;
 	private static TextField tf1, tf2, tf3, tf4, tf5, tf6;
 	private static Button bt1, bt2, bt3;
-	static TextArea ta1;
+	static TextArea ta1; //isto e uma ta
 	
 	private static Insets inset;
 	
